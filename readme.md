@@ -3,7 +3,7 @@
 
 [![Actions Status](https://github.com/Scrum/remark-lint-double-link/workflows/Actions%20Status/badge.svg?style=flat-square)](https://github.com/Scrum/remark-lint-double-link/actions?query=workflow%3A%22CI+tests%22)[![node](https://img.shields.io/node/v/remark-lint-double-link.svg?style=flat-square)]()[![npm version](https://img.shields.io/npm/v/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)[![Dependency Status](https://david-dm.org/Scrum/remark-lint-double-link.svg?style=flat-square)](https://david-dm.org/Scrum/remark-lint-double-link)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/xojs/xo)[![Coveralls status](https://img.shields.io/coveralls/Scrum/remark-lint-double-link.svg?style=flat-square)](https://coveralls.io/r/Scrum/remark-lint-double-link)
 
-[![npm downloads](https://img.shields.io/npm/dm/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)[![npm](https://img.shields.io/npm/dt/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)[![Package Quality](http://npm.packagequality.com/shield/remark-lint-double-link.svg?style=flat-square)](http://packagequality.com/#?package=remark-lint-double-link)
+[![npm downloads](https://img.shields.io/npm/dm/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)[![npm](https://img.shields.io/npm/dt/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)
 
 ## Why?
 For absence in awesome duplicate link list
