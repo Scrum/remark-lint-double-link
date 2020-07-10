@@ -6,7 +6,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)[![npm](https://img.shields.io/npm/dt/remark-lint-double-link.svg?style=flat-square)](https://www.npmjs.com/package/remark-lint-double-link)
 
 ## Why?
-For absence in awesome duplicate link list
+For absence duplicate URL link list
 
 
 ```Text
