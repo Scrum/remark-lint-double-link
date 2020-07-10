@@ -1,0 +1,47 @@
+{
+  "name": "remark-lint-double-link",
+  "version": "0.0.0",
+  "description": "remark plugin lint double link",
+  "license": "MIT",
+  "repository": "Scrum/remark-lint-double-link",
+  "homepage": "https://github.com/Scrum/remark-lint-double-link#readme",
+  "bugs": "Scrum/remark-lint-double-link/issues",
+  "author": {
+    "name": "Ivan Demidov",
+    "email": "Scrum@list.ru",
+    "url": "https://twitter.com/Scrum_"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
+    "test": "xo && nyc ava",
+    "pretest": "clinton"
+  },
+  "keywords": [
+    "lint",
+    "link",
+    "double"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-angular": "^9.0.1",
+    "ava": "^3.9.0",
+    "clinton": "^0.14.0",
+    "conventional-changelog-cli": "^2.0.35",
+    "husky": "^4.2.5",
+    "nyc": "^15.1.0",
+    "remark": "^12.0.0",
+    "remark-lint": "^7.0.1",
+    "retext": "^7.0.1",
+    "unified-lint-rule": "^1.0.6",
+    "unist-util-visit": "^2.0.2",
+    "xo": "^0.32.0"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/scrums"
+  }
+}
