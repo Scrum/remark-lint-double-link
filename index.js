@@ -1,3 +1,4 @@
+const normalizeUrl = require('normalize-url');
 const rule = require('unified-lint-rule');
 var visit = require('unist-util-visit')
 
@@ -10,7 +11,12 @@ function processor(tree, file) {
   const links = new Map();
 
   visit(tree, 'link', node => {
-    const {url} = node;
+    const url = normalizeUrl(node.url, {
+      removeDirectoryIndex: true,
+      stripHash: true,
+      stripProtocol: true,
+      removeQueryParameters: [/\.*/i]
+    });
 
     if (links.has(url)) {
       links.get(url).push(node)
