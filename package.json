@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-double-link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Remark plugin lint double link",
   "license": "MIT",
   "repository": "Scrum/remark-lint-double-link",
@@ -25,6 +25,9 @@
     "link",
     "double"
   ],
+  "dependencies": {
+    "normalize-url": "^5.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-angular": "^9.0.1",
