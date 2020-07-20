@@ -25,6 +25,9 @@
     "link",
     "double"
   ],
+  "dependencies": {
+    "normalize-url": "^5.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-angular": "^9.0.1",
