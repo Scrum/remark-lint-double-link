@@ -9,7 +9,9 @@ const nok = `![img](./logo)
 [super-link-1](http://link-1)
 - [puper-link-1](http://link-1)
 - [puper-link-1](http://link-2)
-- [puper-link-1](http://link-2/index.php?foo=bar&ref=test_ref#content)`;
+- [puper-link-1](http://link-2/index.php?foo=bar&ref=test_ref#content)
+- [AppImage discovery](#appimage-discovery)
+- [AppImage discovery](#appimage-discovery)`;
 
 const ok = `- [puper-link-1](http://link-1)
 - [puper-link-1](http://link-2)`;
@@ -29,7 +31,9 @@ test('remark-lint-double-link invalid', t => {
       '2:1-2:30: http://link-1',
       '3:3-3:32: http://link-1',
       '4:3-4:32: http://link-2',
-      '5:3-5:71: http://link-2/index.php?foo=bar&ref=test_ref#content'
+      '5:3-5:71: http://link-2/index.php?foo=bar&ref=test_ref#content',
+      '6:3-6:44: #appimage-discovery',
+      '7:3-7:44: #appimage-discovery',
     ],
     'should work on valid fixtures'
   );
