@@ -11,7 +11,7 @@ function processor(tree, file) {
   const links = new Map();
 
   visit(tree, 'link', node => {
-    const url = normalizeUrl(node.url, {
+    const url = node.url.startsWith('#') ? node.url : normalizeUrl(node.url, {
       removeDirectoryIndex: true,
       stripHash: true,
       stripProtocol: true,
