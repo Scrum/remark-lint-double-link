@@ -1,5 +1,14 @@
+## <small>0.1.3 (2020-09-28)</small>
+
+* fix: now validate with query params ([5a8438e](https://github.com/Scrum/remark-lint-double-link/commit/5a8438e))
+* test: validate with query params ([b4e21cc](https://github.com/Scrum/remark-lint-double-link/commit/b4e21cc))
+
+
+
 ## <small>0.1.2 (2020-08-05)</small>
 
+* 0.1.2 ([1edf518](https://github.com/Scrum/remark-lint-double-link/commit/1edf518))
+* build: update changelog ([0ae9db6](https://github.com/Scrum/remark-lint-double-link/commit/0ae9db6))
 * build: update dep dev ([75f7140](https://github.com/Scrum/remark-lint-double-link/commit/75f7140))
 * fix: validation anchor link, close #4 ([16e272d](https://github.com/Scrum/remark-lint-double-link/commit/16e272d)), closes [#4](https://github.com/Scrum/remark-lint-double-link/issues/4)
 * test: validate anchor link, issue #4 ([cc540d0](https://github.com/Scrum/remark-lint-double-link/commit/cc540d0)), closes [#4](https://github.com/Scrum/remark-lint-double-link/issues/4)
