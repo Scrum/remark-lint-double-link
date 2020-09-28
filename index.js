@@ -15,7 +15,7 @@ function processor(tree, file) {
       removeDirectoryIndex: true,
       stripHash: true,
       stripProtocol: true,
-      removeQueryParameters: [/\.*/i]
+      // removeQueryParameters: [/\.*/i]
     });
 
     if (links.has(url)) {
