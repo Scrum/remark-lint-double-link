@@ -16,6 +16,9 @@ const nok = `![img](./logo)
 const ok = `- [puper-link-1](http://link-1)
 - [puper-link-1](http://link-2)`;
 
+const okInDesc = `- [puper-link-1](http://link-1) - [puper-link-1](http://link-1)
+- [puper-link-2](http://link-2) - Forked [puper-link-1](http://link-1)`;
+
 test('remark-lint-double-link valid', t => {
   t.deepEqual(
     processor.processSync(ok).messages.map(String),
@@ -24,15 +27,21 @@ test('remark-lint-double-link valid', t => {
   );
 });
 
+test('remark-lint-double-link valid for descriptions', t => {
+  t.deepEqual(
+    processor.processSync(okInDesc).messages.map(String),
+    [],
+    'should work on valid fixtures ignoring descriptions'
+  );
+});
+
 test('remark-lint-double-link invalid', t => {
   t.deepEqual(
     processor.processSync(nok).messages.map(String),
     [
-      '2:1-2:30: http://link-1',
-      '3:3-3:32: http://link-1',
       '6:3-6:44: #appimage-discovery',
       '7:3-7:44: #appimage-discovery',
     ],
-    'should work on valid fixtures'
+    'should work on invalid fixtures'
   );
 });
