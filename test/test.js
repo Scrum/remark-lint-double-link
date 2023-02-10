@@ -1,7 +1,8 @@
-const test = require('ava');
-const remark = require('remark');
-const lint = require('remark-lint');
-const doubleLink = require('..');
+// @ts-nocheck
+import test from 'ava';
+import { remark } from 'remark';
+import lint from 'remark-lint';
+import doubleLink from '../index.js';
 
 const processor = remark().use(lint).use(doubleLink);
 
@@ -16,11 +17,20 @@ const nok = `![img](./logo)
 const ok = `- [puper-link-1](http://link-1)
 - [puper-link-1](http://link-2)`;
 
+const ok2 = `- [hash-link-1](http://link#page#123)
+- [hash-link-2](http://link#page#123)`;
+
 test('remark-lint-double-link valid', t => {
   t.deepEqual(
     processor.processSync(ok).messages.map(String),
     [],
     'should work on valid fixtures'
+  );
+
+  t.deepEqual(
+    processor.processSync(ok2).messages.map(String),
+    [],
+    'should not fail if there are multiple hashtags'
   );
 });
 
