@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-double-link",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Remark plugin lint double link",
   "license": "MIT",
   "repository": "Scrum/remark-lint-double-link",
