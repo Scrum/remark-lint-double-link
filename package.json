@@ -17,7 +17,7 @@
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
-    "test": "xo && nyc ava",
+    "test": "nyc ava",
     "pretest": "clinton"
   },
   "files": [
@@ -44,8 +44,7 @@
     "husky": "^4.2.5",
     "nyc": "^15.1.0",
     "remark": "^14.0.2",
-    "remark-lint": "^9.1.1",
-    "xo": "^0.32.0"
+    "remark-lint": "^9.1.1"
   },
   "funding": {
     "type": "patreon",
