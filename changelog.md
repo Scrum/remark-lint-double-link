@@ -1,5 +1,15 @@
+## 0.2.0 (2023-02-21)
+
+* perf: drop commit lint ([4045c58](https://github.com/Scrum/remark-lint-double-link/commit/4045c58))
+* perf: drop xo ([a6aca14](https://github.com/Scrum/remark-lint-double-link/commit/a6aca14))
+* fix: allow double hashtags, close #9 ([397426f](https://github.com/Scrum/remark-lint-double-link/commit/397426f)), closes [#9](https://github.com/Scrum/remark-lint-double-link/issues/9)
+
+
+
 ## <small>0.1.3 (2020-09-28)</small>
 
+* 0.1.3 ([6eb972f](https://github.com/Scrum/remark-lint-double-link/commit/6eb972f))
+* build: update changelog ([e0ecec1](https://github.com/Scrum/remark-lint-double-link/commit/e0ecec1))
 * fix: now validate with query params ([5a8438e](https://github.com/Scrum/remark-lint-double-link/commit/5a8438e))
 * test: validate with query params ([b4e21cc](https://github.com/Scrum/remark-lint-double-link/commit/b4e21cc))
 
